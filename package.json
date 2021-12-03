@@ -1,0 +1,19 @@
+{
+  "name": "webdriverjs_patterns",
+  "version": "1.0.0",
+  "description": "Home Task for Module Design Patterns",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "webdriver-manager update --versions.standalone=3.4.0",
+    "test": "protractor ./test/config/protractor.config.js --disableChecks"
+  },
+  "author": "Aliaksandr Belavus",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "decache": "^4.6.1",
+    "mocha": "^9.1.3",
+    "protractor": "^7.0.0",
+    "selenium-webdriver": "^4.1.0"
+  }
+}
