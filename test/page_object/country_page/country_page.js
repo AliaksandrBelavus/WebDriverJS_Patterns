@@ -5,8 +5,11 @@ class CountryPage extends BasePage {
   constructor() {
     super();
     this.url = "https://www.apc.com";
-    this.USCountry = new Element("xpath", "//a[contains(text(), \"United States\")]");
-      }
+    this.USCountry = new Element(
+      "xpath",
+      '//a[contains(text(), "United States")]'
+    );
+  }
   open() {
     return super.open(this.url);
   }
@@ -15,4 +18,4 @@ class CountryPage extends BasePage {
   }
 }
 
-module.exports = new CountryPage;
+module.exports = new CountryPage();

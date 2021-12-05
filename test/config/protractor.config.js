@@ -1,18 +1,17 @@
 exports.config = {
-
   restartBrowserBetweenTests: true,
 
   directConnect: true,
 
   capabilities: {
-    'browserName': 'chrome'
+    browserName: "chrome",
   },
 
-  framework: 'jasmine',
+  framework: "jasmine",
 
-  specs: ['../specs/*.js'],
+  specs: ["../specs/*.js"],
 
   jasmineNodeOpts: {
-    defaultTimeoutInterval: 30000
-  }
+    defaultTimeoutInterval: 30000,
+  },
 };
