@@ -37,6 +37,7 @@ describe("Smoke test", function () {
     await HomePage.open();
     await HomePage.wait(3000);
     await HomePage.Header.clickSupport();
+    await HomePage.wait(2000);
     await HomePage.Header.clickProductSelector();
     await HomePage.wait(2000);
 

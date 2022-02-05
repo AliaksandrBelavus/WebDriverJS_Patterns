@@ -1,3 +1,5 @@
+const SpecReporter = require("jasmine-spec-reporter").SpecReporter;
+
 exports.config = {
   restartBrowserBetweenTests: true,
 
@@ -13,5 +15,24 @@ exports.config = {
 
   jasmineNodeOpts: {
     defaultTimeoutInterval: 30000,
+  },
+
+  onPrepare: function () {
+    jasmine.getEnv().addReporter(
+      new SpecReporter({
+        suite: {
+          displayNumber: true,
+        },
+        spec: {
+          displayPending: true,
+          displayDuration: true,
+        },
+        summary: {
+          displaySuccesses: false,
+          displayFailed: false,
+          displayPending: false,
+        },
+      })
+    );
   },
 };
