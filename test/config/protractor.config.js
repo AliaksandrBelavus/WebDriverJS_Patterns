@@ -1,7 +1,6 @@
 const SpecReporter = require("jasmine-spec-reporter").SpecReporter;
 
 exports.config = {
-  restartBrowserBetweenTests: true,
 
   directConnect: true,
 
