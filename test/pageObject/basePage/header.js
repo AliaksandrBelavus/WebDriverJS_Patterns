@@ -7,10 +7,10 @@ class Header {
     );
   }
   clickSupport() {
-    return this.supportButton.click();
+    this.supportButton.click();
   }
   clickProductSelector() {
-    return this.productSelectorButton.click();
+    this.productSelectorButton.click();
   }
 }
 

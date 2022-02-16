@@ -1,5 +1,5 @@
-function wait(waitInMilliseconds) {
-    return browser.sleep(waitInMilliseconds);
+async function wait(waitInMilliseconds) {
+    await browser.sleep(waitInMilliseconds);
   };
 
   module.exports = wait;

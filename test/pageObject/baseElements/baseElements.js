@@ -14,8 +14,8 @@ class Element {
     return elementText;
   }
 
-  async sendKeys(text) {
-    const elementKeys = await this.element.sendKeys(text);
+  sendKeys(text) {
+    this.element.sendKeys(text);
   }
 }
 

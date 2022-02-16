@@ -32,7 +32,9 @@ describe("Smoke test", function () {
     await HomePage.Header.clickProductSelector();
     await wait(2000);
     await ProductSelectorPage.clickUPSSelector();
+    await wait(2000);
     await ProductSelectorPage.clickHomeEnvironmentRadio();
+    await wait(2000);
     await ProductSelectorPage.clickConfigureByLoadButton();
     await wait(2000);
     await ProductSelectorPage.sendKeysToTotalPowerInput(100);

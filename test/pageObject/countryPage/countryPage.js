@@ -7,8 +7,9 @@ class CountryPage extends BasePage {
     this.url = "https://www.apc.com";
     this.USCountry = new Element("xpath", '//a[contains(text(), "United States")]');
   }
+
   clickUSCountry() {
-    return this.USCountry.click();
+    this.USCountry.click();
   }
 }
 

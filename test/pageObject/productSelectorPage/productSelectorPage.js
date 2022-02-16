@@ -12,16 +12,16 @@ class ProductSelectorPage extends BasePage {
     this.TotalPowerLabel = new Element("xpath", "//span[@class='TotalPowerDraw_values__lPanF']");
   }
   clickUPSSelector() {
-    return this.UPSSelector.click();
+    this.UPSSelector.click();
   }
   clickConfigureByLoadButton() {
-    return this.ConfigureByLoadButton.click();
+    this.ConfigureByLoadButton.click();
   }
   clickHomeEnvironmentRadio() {
-    return this.HomeEnvironmentRadio.click();
+    this.HomeEnvironmentRadio.click();
   }
   sendKeysToTotalPowerInput(text) {
-    return this.TotalPowerInput.sendKeys(text);
+    this.TotalPowerInput.sendKeys(text);
   }
 }
 
