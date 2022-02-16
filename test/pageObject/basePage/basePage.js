@@ -4,8 +4,8 @@ class BasePage {
   constructor() {
     this.Header = new Header();
   }
-  open(url) {
-    return browser.get(url);
+  open() {
+    browser.get(this.url);
   }
 }
 

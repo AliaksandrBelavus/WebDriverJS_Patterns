@@ -7,7 +7,7 @@ class Element {
     }
   }
   click() {
-    return this.element.click();
+    this.element.click();
   }
   async getText() {
     const elementText = await this.element.getText();
@@ -16,7 +16,6 @@ class Element {
 
   async sendKeys(text) {
     const elementKeys = await this.element.sendKeys(text);
-    return elementKeys;
   }
 }
 
