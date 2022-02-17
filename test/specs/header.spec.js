@@ -4,6 +4,7 @@ const HomePage = require("../pageObject/homePage/homePage");
 const ProductSelectorPage = require("../pageObject/productSelectorPage/productSelectorPage");
 const wait = require("../helper/wait");
 const siteLocation = "UNITED STATES";
+const displayedTotalPowerDraw = "100 / 1200 Watts";
 
 describe("Smoke test", function () {
   beforeAll(function () {
@@ -39,6 +40,6 @@ describe("Smoke test", function () {
     await wait(2000);
     await ProductSelectorPage.sendKeysToTotalPowerInput(100);
     const TotalPowerText = await ProductSelectorPage.TotalPowerLabel.getText();
-    expect(TotalPowerText).to.be.equal("100 / 1200 Watts");
+    expect(TotalPowerText).to.be.equal(displayedTotalPowerDraw);
   });
 });
